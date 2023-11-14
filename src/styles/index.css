@@ -1,0 +1,113 @@
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  width: 360px;
+  padding: 1.6rem;
+  gap: 1rem;
+  background: var(--secondary-color);
+  border-radius: 25px;
+}
+
+#container span {
+  height: 50px;
+  width: 50px;
+  background: var(--thanks-span);
+  background-image: url("/src/assets/icon-star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  border-radius: 50%;
+}
+
+#container h2 {
+  color: var(--font-primary-color);
+}
+
+#container p {
+  color: var(--font-secondary-color);
+  margin-bottom: 1rem;
+}
+
+.rating-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.rating-list li {
+  background: var(--rate-color);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--font-secondary-color);
+}
+
+.rating-list li:hover {
+  color: var(--font-primary-color);
+  background: var(--rate-selected);
+}
+
+.rating-list .rate-selected {
+  color: var(--font-primary-color);
+  background: var(--rate-hover);
+}
+
+.submit {
+  color: var(--font-primary-color);
+  background: var(--button-color);
+  height: 50px;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.submit:hover {
+  color: var(--font-tertiary-color);
+  background: var(--button-hover);
+}
+
+#thanks-container {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 360px;
+  max-width: 480px;
+  padding: 1rem;
+  gap: 1rem;
+  color: var(--font-primary-color);
+  background: var(--secondary-color);
+  border-radius: 25px;
+}
+
+#thanks-container .selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: fit-content;
+  padding: 0 1rem;
+  gap: 0.2rem;
+  font-size: 14px;
+  color: var(--font-tertiary-color);
+  background: var(--thanks-span);
+  border-radius: 25px;
+}
+
+#thanks-container p {
+  color: var(--font-secondary-color);
+  text-align: center;
+}
